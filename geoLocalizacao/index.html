@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Localização</title>
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <style>
+        p#data {
+            border: none;
+            max-height: 20em;
+        }
+    </style>
+
+    <script>
+        //  philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments);
+        };
+        ga('create', 'UA-33848682-1', 'auto');
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>
+            <a href="#" title="App Javascript com GeoLocalização"></a>GeoLocalização</h1>
+
+        <p id="data"></p>
+
+        <script src="js/app.js"></script>
+    </div>
+</body>
+
+</html>
