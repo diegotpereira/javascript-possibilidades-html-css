@@ -4,57 +4,56 @@ body {
     margin: 30px;
     padding: 0;
     word-break: break-word;
-  }
+}
 
-  div#container {
+div#container {
     margin: 0 auto 0 auto;
     max-width: 40em;
     padding: 1em 1.5em 1.3em 1.5em;
-  }
+}
 
-  section#george-floyd a {
+section#george-floyd a {
     color: black;
     display: block;
     font-size: 20px;
     font-weight: bold;
     margin: 0 0 20px 0;
-  }
-  
-  section#george-floyd a#name {
+}
+
+section#george-floyd a#name {
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  section#george-floyd a#dates {
+}
+
+section#george-floyd a#dates {
     font-size: 22px;
-  }
-  
-  section#george-floyd img {
+}
+
+section#george-floyd img {
     display: block;
     margin: 0 auto 40px auto;
     max-width: 100%;
     width: 400px;
-  }
-  
-  section#george-floyd {
+}
+
+section#george-floyd {
     border-bottom: 1px solid black;
     margin: 0 0 80px 0;
     padding: 0 0 60px 0;
     text-align: center;
-  }
-  
-  @media (min-width: 500px) {
-    body {
-      margin: 140px 30px 30px 30px;
-    }
-  
-    section#george-floyd {
-      margin: 0 0 300px 0;
-    }
-  }
+}
 
-  a {
+@media (min-width: 500px) {
+    body {
+        margin: 140px 30px 30px 30px;
+    }
+    section#george-floyd {
+        margin: 0 0 300px 0;
+    }
+}
+
+a {
     color: #15c;
     font-weight: 300;
     text-decoration: none;
-  }
+}
