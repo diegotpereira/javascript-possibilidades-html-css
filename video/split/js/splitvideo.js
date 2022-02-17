@@ -84,8 +84,55 @@ class SplitVideo { // eslint-disable-line no-unused-vars
                 0)
             estilo.insertRule(
                 '#splitview audio {bottom: 5px; opacity: 0;' +
-                'outline'
-            )
+                'outline: none; padding: 0 5px; position: absolute; ' + 
+                'transation: opacity 0.3s; width: calc(100% - 10px);' + 
+                'transform: translateZ(0); z-index: 1; }', 0)
+            estilo.insertRule('div#splitview:hover audio {opacity: 1;}', 
+            0)
+            estilo.insertRule(
+                'div#splitview {height: var(--video-height); ' + 
+                'overflow: hidden; position: relative;}', 0)
+            estilo.insertRule('#splitview video {position: absolute;}', 0)
+            estilo.insertRule(
+                '#splitview video:last-of-type {display: block; ' +
+                  'clip-path: inset(0 0 0 var(--video-clip)); opacity: 1')
+            estilo.insertRule(
+            '#splitview input[type=range] {background: none; ' +
+            'margin: 0 2px 0 0; position: absolute;' +
+            'width: 100%; -webkit-appearance: none;}', 0);
+            estilo.insertRule('input[type=range]:focus {outline: none;}',
+            0)
+
+            if(ehChrome) {
+                estilo.insertRule(
+                    'input[type=range]::-webkit-slider-runnable-track ' +
+                    '{height: 0;}', 0);
+                estilo.insertRule(
+                'input[type=range]::-webkit-slider-thumb {background: ' +
+                'black; cursor: pointer; height: var(--video-height); opacity: 0.5; ' +
+                'transform: translateZ(0px);' +
+                'width: var(--thumb-width); -webkit-appearance: none;}',
+                0);
+                estilo.insertRule(
+                'input[type=range]:focus::-webkit-slider-runnable-track' +
+                '{height: 0;}', 0);
+            } else if(ehFirefox) {
+                estilo.insertRule(
+                    '#splitview audio {bottom: 0; padding: 0; ' +
+                    'width: 100%;}', 0)
+                estilo.insertRule('#splitview input[type=range] {height: ' +
+                  'var(--video-height); left: -1px; position: relative; top: -1px;}', 0);
+                estilo.insertRule('input[type=range]::-moz-range-track ' +
+                '{background: none;}', 0);
+                estilo.insertRule(
+                'input[type=range]::-moz-range-thumb {background: black;' +
+                'border: none; border-radius: 0; cursor: pointer; height: ' +
+                'var(--video-height); opacity: 0.5; width: var(--thumb-width)',
+                0);
+                estilo.insertRule(
+                'input[type=range]:focus::-moz-range-track {height: 0;}',
+                0)
+            }
         }
         this.addCss_()
         this.initVideos_()
@@ -96,6 +143,9 @@ class SplitVideo { // eslint-disable-line no-unused-vars
         this.appendVideo_(primeiroVideoSrc)
         this.appendVideo_(segundoVideoSrc)
         window.primeiroVideo = this.primeiroVideo_ = document.querySelector(
-            `video[src="${primeiroVideo}"]`)
+            `video[src="${primeiroVideoSrc}"]`)
+        window.segundoVideo = this.segundoVideo_ = document.querySelector(
+            `video[src="${segundoVideoSrc}"]`)
+        this.unmutedVideo_ = this.primeiroVideo_
     }
 }
