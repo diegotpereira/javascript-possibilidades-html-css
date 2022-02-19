@@ -1,0 +1,24 @@
+article {
+    -webkit-flow-into: myFlow;
+    flow-into: myFlow;
+}
+
+article p {
+    margin-top: 0;
+}
+
+.regiao {
+    display: inline-block;
+    -webkit-flow-from: myFlow;
+    flow-from: myFlow;
+    height: 300px;
+}
+
+#regiao1 {
+    width: 30%;
+}
+
+#regiao2 {
+    margin-left: 5%;
+    width: 60%;
+}
