@@ -1,0 +1,50 @@
+menu a {
+    display: block;
+    line-height: 2rem;
+}
+
+menu div {
+    background-color: white;
+    margin: 0;
+    opacity: 0;
+    padding: 20px 20px 10px 0;
+    position: absolute;
+    transition: visibility 0.5s;
+    visibility: hidden;
+    width: 60px;
+    z-index: 1;
+}
+
+menu:focus div {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+menu {
+    outline: none;
+   position: relative;
+   display: inline-block;
+   padding: 0;
+}
+
+menu:focus {
+    pointer-events: none;
+}
+
+menu svg {
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+}
+
+menu svg#fechar {
+    display: none;
+}
+
+menu:focus svg#fechar {
+    display: block;
+}
+menu:focus svg#abrir {
+    display: none;
+}
