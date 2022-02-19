@@ -1,0 +1,19 @@
+p {
+    font-size: 14px;
+}
+
+div#primeiraIdentacao p {
+    text-indent: 0;
+}
+
+div#primeiraIdentacao p:first-child {
+    text-indent: 1.5em;
+}
+
+div#identacaoTudoMenosPrimeira p {
+    text-indent: 1.5em;
+}
+
+div#identacaoTudoMenosPrimeira p:first-child {
+    text-indent: 0;
+}

@@ -1,0 +1,19 @@
+.blur {
+    filter: blur(5px);
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.saturate {
+    filter: saturate(5);
+}
+
+.sepia {
+    filter: sepia(1);
+}
+
+.multi {
+    filter: blur(4px) invert(1) opacity(0.5);
+}
