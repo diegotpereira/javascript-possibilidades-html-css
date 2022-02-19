@@ -1,0 +1,8 @@
+div#container div {
+    background: #005293;
+    height: 100px;
+}
+
+div#container div:not(.foo) {
+    background: #fecb00;
+}
