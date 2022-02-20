@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Dados</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div id="container">
+        <h1><a href="../index.html" title="página principal"> principal</a> Lista de dados</h1>
+
+        <p></p>
+
+        <div id="entradas">
+            <input type="text" list="marsupiais" placeholder="Comece a digitar uma palavra como 'Wombat">
+
+            <datalist id="marsupiais">
+                <option value="Bilby"></option>
+                <option value="Coala"></option>
+                <option value="Numbat"></option>
+                <option value="bandicoot-pés-de-porco"></option>
+                <option value="Potoroo"></option>
+                <option value="Quoll"></option>
+                <option value="Wallaby"></option>
+                <option value="Wombat"></option>
+            </datalist>
+
+            <input id="range" type="range" value="50" min="0" max="100" step="25" list="numbers">
+
+            <output for="range"></output>
+
+            <datalist id="numbers">
+                <option value="25" label="25"></option>
+                <option value="50" label="50"></option>
+                <option value="75" label="75"></option>
+            </datalist>
+            
+            <input type="color" value="#000000" list="cinzas">
+            <datalist id="cinzas">
+                <option>#eeeeee</option>
+                <option>#cccccc</option>
+                <option>#aaaaaa</option>
+                <option>#999999</option>
+                <option>#444444</option>
+            </datalist>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
