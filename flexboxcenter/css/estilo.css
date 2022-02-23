@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    height: 300px;
+}
+
+.child {
+    background-color: #ccc;
+    height: 200px;
+    margin: auto;
+    width: 200px;
+}
