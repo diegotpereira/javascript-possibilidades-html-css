@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100% - 3em);
+}
+
+div#container {
+    box-orient: vertical;
+    display: box;
+    display: flexbox;
+    height: calc(100% - 9em);
+    max-width: 100%;
+}
+
+video {
+    background: #ccc;
+    box-flex: 1;
+    display: box;
+    flex: 1;
+}

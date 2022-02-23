@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base target="_blank">
+
+    <title>Imagem em tela cheia</title>
+
+    <!-- estilização -->
+    <link rel="stylesheet" href="../../css/principal.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1><a href="../index.html" title="página principal"> principal</a> Tela Cheia</h1>
+
+        <div class="videoContainer" id="videoContainer0">
+            <img src="imagens/thumbnail0.jpg" alt="Thumbnail imagem 0" />
+            <video controls poster="imagens/thumbnail0.jpg">
+				<source src="video/chrome.mp4" type="video/mp4">
+				<source src="video/chrome.webm" type="video/webm">
+				<p>Este navegador não suporta o elemento de vídeo.</p>
+			</video>
+        </div>
+
+        <div class="videoContainer" id="videoContainer0">
+            <img src="imagens/thumbnail1.jpg" alt="Thumbnail imagem 1" />
+            <video controls poster="imagens/thumbnail1.jpg">
+				<source src="video/chrome.mp4" type="video/mp4">
+				<source src="video/chrome.webm" type="video/webm">
+				<p>Este navegador não suporta o elemento de vídeo.</p>
+			</video>
+        </div>
+
+        <p>Clique ou toque em uma imagem em miniatura para exibir o vídeo em tela cheia.</p>
+
+        <p id="status"></p>
+
+        <a href="" title="Ver fonte para esta página no GitHub" id="viewSource"> Ver código no GitHub</a>
+    </div>
+
+    <script src="js/video.js"></script>
+</body>
+
+</html>

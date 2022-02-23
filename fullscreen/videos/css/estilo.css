@@ -1,0 +1,17 @@
+div.videoContainer {
+    display: inline-block;
+    width: calc(50% -10px);
+}
+
+div.videoContainer:first-of-type {
+    margin: 0 15px 0 0;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    display: none;
+    max-width: 100%;
+}
